@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>Form1</title>
+</head>
+<body>
+    <h2>Sample form</h2>
+
+    <form action="/action_page.php" target="_blank" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Personal Info</legend>
+    <label for="fnm">First Name</label><br>
+    <input type="text" id="frame" name="fnm" value="Jhon"><br>
+    <label for="Mnm">Middle Name</label><br>
+    <input type="text" id="frmae" name="Lnm"><br>
+    <label for="Lnm">Last Name</label><br>
+        <input type="text id="frame" name="Lnm" value="Doe"><br>
+        <input type="submit" value="submit"><br><br>
+    </fieldset>
+    </form>
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+<hr>
+    <h2>Select elements</h2>
+<form action="/action_page.php">
+    <label style="text-align: center;" for="cars">choose a car: </label>
+    <select name="cars" id="cars" size="3" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="Thar" selected>Thar</option>
+        <option value="i10">i10</option>
+        <option value="hexa">Hexa</option><br><br>
+      
+    </select> 
+    <textarea name="messages" id="Car" cols="30" rows="10"></textarea> <br><br>
+    <input type="Submit"> <br>
+
+    
+
+</form>
+</body>
+<hr>
+<h3>Radio Buttons</h3>
+<p>Choose your favorite Web language:</p>
+<form target="_blank">
+    <input type="radio" id="html"name="FAv Lang" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav lang" value=CSS>
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="java" name="fav lang" value="JAVA">
+    <label for="java">JAVA</label><br>
+</form>
+<button type="button" onclick="alert('Warning!')" style="width: 50; height: 26;">Enter</button>
+<hr>
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+</html>
